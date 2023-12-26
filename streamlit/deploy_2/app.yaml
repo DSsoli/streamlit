@@ -1,0 +1,11 @@
+# runtime: custom means configuration/environments are set up by docker. 
+# So MUST if using docker
+
+# This is necessary when using a Dockerfile because it tells the Google Cloud Platform 
+# that you're providing your own custom environment setup (defined in the Dockerfile).
+runtime: custom
+
+# env: flex 
+# This refers to the App Engine flexible environment, 
+# which automatically adjusts your app’s resources based on the incoming traffic.
+env: flex
